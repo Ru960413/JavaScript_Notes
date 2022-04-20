@@ -75,7 +75,59 @@
 
 ![](https://i.imgur.com/ro1vn4h.png)
 
-//基礎篇完
+/Objects篇完
+
+
+## Object references and copying
+
+### Object 的儲存
+Object在JavaScript中會以reference的方式儲存，透過查找address才會得到object的本身，舉例：
+![](https://i.imgur.com/jCOtWas.png)
+
+兩個變數都儲存了這個object的reference， 我們可以藉由他們找到object進而改變它：
+![](https://i.imgur.com/EeO7cvz.png)
+
+由admin.name以及user.name都能找到{name:'John'}。
+
+### 用reference來比較object
+唯有當兩個object為同一個object他們才會相等：
+![](https://i.imgur.com/k7svSWl.png)
+
+當object 間互相比較時，他們會被轉為字串
+
+### cloning and merging
+可利用object.assign，語法為：
+![](https://i.imgur.com/tPu7KYv.png)
+
+其中的*dest*為target object, *src1, ..., src*則為source objects，他會將source object 的屬性複製到target object *dest*中，例如：
+![](https://i.imgur.com/ziRAwdv.png)
+
+當屬性已經存在，他則會被覆寫過去：
+![](https://i.imgur.com/BJAr5Mf.png)
+
+object.assign 也可以取代for..in loop：
+![](https://i.imgur.com/JGbMiUu.png)
+
+### Nested cloning
+
+如果object 中的屬性是其他的object該怎麼處理呢？
+![](https://i.imgur.com/cbU1PCS.png)
+
+此時需要用到deep clone(待查)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
