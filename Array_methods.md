@@ -11,3 +11,8 @@
 - reduce() https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
 
 - map() https://ithelp.ithome.com.tw/articles/10228634
+
+About markDown language:
+
+- https://www.casper.tw/development/2019/11/23/ten-mins-learn-markdown/
+- https://markdown.tw/
